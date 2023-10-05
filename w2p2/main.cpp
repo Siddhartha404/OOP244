@@ -1,7 +1,7 @@
 /***********************************************************************
-// OOP244 Workshop #1 DIY: tester program
+// OOP244 Workshop #2 DIY (part 2): tester program
 //
-// File  direcotry.cpp
+// File  main.cpp
 // Version 1.0
 // Author   Fardad Soleimanloo
 // Description
@@ -10,9 +10,12 @@
 // -----------------------------------------------------------
 // Name            Date            Reason
 ***********************************************************************/
-#include "Phone.h"
+#include "Population.h"
 using namespace sdds;
 int main() {
-	phoneDir("Star Wars", "phones.txt");
-	return 0;
+    if (load("PCpopulations.csv")) {
+        display();
+    }
+    deallocateMemory();
+    return 0;
 }
