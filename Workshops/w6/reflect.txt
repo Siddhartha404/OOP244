@@ -1,0 +1,8 @@
+﻿#Name: Siddhartha Thapa Chhetri
+#Student ID: 147913222
+#Email: sthapa-chhetri2@myseneca.ca
+#Section: ZAA
+#Completion date: 2023-11-08
+In completing the workshop and achieving project milestones, I delved into various aspects of C++ programming and object-oriented design. The HealthCard class implementation allowed me to reinforce my understanding of dynamic memory allocation, validation techniques, and the application of the Rule of Three (copy constructor, copy assignment, and destructor). The integration of file I/O operations and operator overloading, such as << and >>, enhanced my skills in designing user-friendly interfaces.
+The process of creating modular and organized code was crucial. Private helper methods like reallocateAndCopy and extractChar demonstrated the importance of code reuse and readability. Additionally, the implementation of the extraction and insertion operators deepened my understanding of stream manipulation in C++.
+Despite initial challenges in managing memory and handling input validations, referring to course notes and revisiting the concepts iteratively proved beneficial. The project not only solidified my comprehension of C++ but also improved my problem-solving skills and ability to create maintainable code.
