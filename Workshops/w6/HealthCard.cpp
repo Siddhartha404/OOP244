@@ -46,7 +46,7 @@ namespace sdds {
     {
         if (*this) { 
             if (toFile) {
-                ostr << m_name << ", ";
+                ostr << m_name << ",";
                 printIDInfo(ostr);
                 ostr << endl;
             }
