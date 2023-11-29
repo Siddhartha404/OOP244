@@ -1,0 +1,12 @@
+﻿/*
+#Name: Siddhartha Thapa Chhetri
+#Student ID: 147913222
+#Email: sthapa-chhetri2@myseneca.ca
+#Section: ZAA
+#Completion date: 2023-11-20
+*/
+
+
+
+
+In completing the workshop and project milestones, I delved into key concepts such as inheritance, polymorphism, and dynamic memory management in C++. The implementation involved creating abstract classes like LblShape and derived classes (Line and Rectangle), necessitating careful consideration of constructors, destructors, and memory allocation. Managing input parsing and generating the correct output demanded a solid understanding of C++ syntax and object-oriented design principles. One notable aspect was the utilization of dynamic memory for labels and ensuring proper memory deallocation. Throughout the process, I grasped the significance of effective constructor and destructor usage, enhancing my understanding of object lifecycle management. Despite facing challenges in debugging and refining logical aspects, the experience reinforced my skills in C++ programming and underscored the importance of meticulous attention to detail in crafting robust and readable code. This workshop has contributed significantly to my proficiency in object-oriented programming and problem-solving within the C++ language.

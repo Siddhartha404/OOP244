@@ -23,17 +23,18 @@ const int MIN_VAL = 1;
 namespace sdds {
 	class Date {
 	private:
-		int m_year; 
+		int m_year;
 		int m_month;
-		int m_day; 
-		Status m_state; 
+		int m_day;
+		Status m_state;
 		bool m_formatted;
 		bool validate();
 		int uniqueDateValue()const;
-		
+
 	public:
 
-		Date(int year = 0, int month = 0, int day = 0);
+		Date();
+		Date(int year, int month, int day);
 
 		//operation overloading
 		bool operator==(const Date& date) const;

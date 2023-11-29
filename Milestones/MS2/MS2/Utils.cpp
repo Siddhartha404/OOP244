@@ -34,7 +34,7 @@ namespace sdds {
         delete[] destination;
         destination = nullptr;
         if (source != nullptr) {
-            destination = new char[strlen(source) +1];
+            destination = new char[strlen(source) + 1];
             strcpy(destination, source);
         }
     }
@@ -47,14 +47,17 @@ namespace sdds {
             cin >> value;
             if (cin.fail()) {
                 cin.clear();
+                cin.ignore(10000, '\n');
+                cin.clear();
                 return -1;
             }
             else {
                 return value;
             }
+            cin.clear();
         }
 
-    
+
     }
 
     int Utils::getint(int min, int max, const char* prompt, const char* errMes) {

@@ -1,0 +1,10 @@
+﻿/*
+#Name: Siddhartha Thapa Chhetri
+#Student ID: 147913222
+#Email: sthapa-chhetri2@myseneca.ca
+#Section: ZAA
+#Completion date: 2023-11-10
+*/
+
+
+Throughout the workshop and project milestones, I immersed myself in fundamental object-oriented programming (OOP) concepts, with a primary focus on inheritance, class hierarchies, and polymorphism. The creation of a derived class, 'Pack,' inheriting from the 'Container' base class, provided hands-on experience in building and extending class relationships. Shadowing base class member functions in the derived class showcased the ability to customize behavior while adhering to a cohesive structure. Implementation of custom input and output operators enhanced user interaction with the classes. Function overriding, a core aspect of polymorphism, was applied to augment flexibility and extend class functionalities. Overcoming challenges, particularly in initializing member variables, reinforced the importance of meticulous constructor design. This immersive experience deepened my understanding of encapsulation, abstraction, and the pragmatic application of OOP principles, fostering proficiency in effective class design and hierarchy management.
