@@ -82,7 +82,7 @@ namespace sdds {
     void Utils::getSystemDate(int* year, int* mon, int* day) {
         if (m_testMode) {
             if (day) *day = sdds_testDay;
-            if (mon) *mon = sdds_testMon;
+            if (mon) *mon = sdds_testMon+2;
             if (year) *year = sdds_testYear;
         }
         else {

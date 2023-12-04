@@ -1,5 +1,5 @@
 /* Citation and Sources...
-Final Project Milestone 2
+Final Project Milestone 5
 Module: AidMan
 Filename: AidMan.h
 Version 1.0
@@ -28,9 +28,9 @@ namespace sdds {
         int m_numOfItems{};
 
         // Private member functions
-        void saveData() const;
+        void save() const;
         void deallocate();
-        bool load(const char* file);
+        bool load();
     public:
         AidMan();
         AidMan(const char* filename);
@@ -39,6 +39,10 @@ namespace sdds {
         void run();
         operator bool()const { return m_filename && m_numOfItems; };
         int list(const char* sub_desc = nullptr);
+        int search(int sku) const;
+        void addItem();
+        void remove(int index);
+        void removeItem();
     };
 }
 

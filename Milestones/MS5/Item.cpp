@@ -109,8 +109,7 @@ namespace sdds {
     {
         if (operator bool()) {
             ofstr << m_sku << '\t' << m_description << '\t' << m_quantityOnHand << '\t' << m_neededQuantity << '\t';
-            ofstr.precision(4);
-            ofstr << m_price;
+            ofstr << fixed << setprecision(2) << m_price;
         }
 
         return ofstr;
@@ -157,7 +156,7 @@ namespace sdds {
                     << left << setw(35) << setfill(' ') << (strlen(m_description) > 35 ? string(m_description, 35) : m_description)
                     << " | " << right << setw(4) << m_quantityOnHand << " | "
                     << right << setw(4) << m_neededQuantity << " | "
-                    << right << setw(7) << setprecision(2) << m_price << " |";
+                    << right << setw(7) << fixed << setprecision(2) << m_price << " |";
             }
             else {
                 ostr << "AMA Item:" << endl
@@ -165,8 +164,9 @@ namespace sdds {
                     << m_description << endl
                     << "Quantity Needed: " << m_neededQuantity << endl
                     << "Quantity Available: " << m_quantityOnHand << endl
-                    << "Unit Price: $" << fixed << setprecision(2) << m_price << endl
-                    << "Needed Purchase Fund: $" << fixed << setprecision(2) << (m_neededQuantity * m_price) - (m_quantityOnHand * m_price) << endl;
+                    << "Unit Price: $" << fixed << setprecision(2) << m_price << endl;
+                double needed = (m_neededQuantity - m_quantityOnHand) * m_price;
+                    ostr << "Needed Purchase Fund: $" << fixed << setprecision(2) << needed << endl;
             }
         }
         return ostr;

@@ -53,7 +53,7 @@ namespace sdds {
 		int input = 0;
 		if (m_menuContent) {
 			int index = 1;
-
+			cout << "---------------------------------" << endl;
 			cout << index << "- ";
 			for (size_t i = 0; i < strlen(m_menuContent); i++) {
 				if (m_menuContent[i] == '\t') {

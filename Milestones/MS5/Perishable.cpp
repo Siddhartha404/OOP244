@@ -109,7 +109,6 @@ namespace sdds {
 
 		delete[] m_instructions;
 		m_instructions = nullptr;
-
 		char temp[1000];
 		if (ifstr.getline(temp, 1000, '\t') && isalpha(temp[0])) {
 			m_instructions = new char[strlen(temp) + 1];
@@ -132,7 +131,7 @@ namespace sdds {
 		istr >> m_expiryDate;
 		istr.ignore(1000, '\n');
 
-		std::cout << "Handling Instructions, ENTER to skip: ";
+		std::cout << "Handling Instructions, ENTER to skip: " << endl;
 		char firstChar = istr.peek();
 		if (firstChar != '\n') {
 			m_instructions = new char[1000];
